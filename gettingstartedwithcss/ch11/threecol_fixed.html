@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Three columns fixed - sidebars first</title>
+<style type="text/css">
+body {
+  background-color:#EAE5CE;
+  color:#000;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin:0;
+}
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color:#FFF;
+  background-image:url(../images/sidebar_both.jpg);
+  background-position:center;
+  background-repeat:repeat-y;
+  border-left:#252017 solid 1px;
+  border-right:#252017 solid 1px;
+}
+#header {
+  background-color: #74685A;
+}
+#header h1 {
+  margin:0;
+  padding:10px 20px;
+  color:#FFF;
+  font-family:Verdana, Geneva, sans-serif;
+}
+#sidebar1, #sidebar2 {
+  width:200px;
+  padding:10px;
+}
+#sidebar1 {
+  float:left;
+}
+#sidebar2 {
+  float: right;
+}
+#mainContent {
+  margin:0 220px;
+  padding:10px 20px;
+}
+#footer {
+  background-color:#252017;
+  color:#DB9924;
+  padding:10px;
+  clear:both;
+}
+h2, h3 {
+  margin-top:0;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="header">
+    <h1>Site Heading</h1>
+  </div>
+  <div id="sidebar1">
+    <h3>Sidebar heading</h3>
+    <p>This side bar is floated left.</p>
+  </div>
+  <div id="sidebar2">
+    <h3>Sidebar heading</h3>
+    <p>This sidebar is floated right.</p>
+  </div>
+  <div id="mainContent">
+    <h2>Main Heading</h2>
+    <p>Both sidebars come before the main content, which has left and right margins equal to the width of the sidebars.</p>
+    <p>Sed do eiusmod tempor incididunt lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor cupidatat non proident, sed do eiusmod tempor incididunt.</p>
+    <p>Ut enim ad minim veniam, lorem ipsum dolor sit amet, ut aliquip ex ea commodo consequat. Velit esse cillum dolore excepteur sint occaecat sunt in culpa. Eu fugiat nulla pariatur. Ullamco laboris nisi qui officia deserunt. Duis aute irure dolor ut labore et dolore magna aliqua.</p>
+    <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt quis nostrud exercitation excepteur sint occaecat. Velit esse cillum dolore qui officia deserunt ut enim ad minim veniam.</p>
+</div>
+  <div id="footer">Footer content</div>
+</div>
+</body>
+</html>

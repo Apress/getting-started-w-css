@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Numbering nested lists with generated content</title>
+<style type="text/css">
+body {
+  color:#000;
+  background-color:#FFF;
+  font-family:Arial, Helvetica, sans-serif;
+}
+ol {
+  list-style-type: none;
+  counter-reset: nested;
+}
+li:before {
+  counter-increment: nested;
+  content: counters(nested, '.') '. ';
+}
+</style>
+</head>
+
+<body>
+<ol>
+  <li>Item one</li>
+  <li>Item two
+    <ol>
+      <li>Nested one</li>
+      <li>Nested two
+        <ol>
+          <li>Deep nest one</li>
+          <li>Deep nest two</li>
+        </ol>
+      </li>
+      <li>Nested three</li>
+    </ol>
+  </li>
+  <li>Item three</li>
+</ol>
+</body>
+</html>

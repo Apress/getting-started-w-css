@@ -1,0 +1,90 @@
+/* Print styles */
+@page {
+  margin: 1in;
+}
+/* Page infrastructure */
+body {
+  background-color:#FFF;
+  color:#000;
+  font-family:"Minion Pro", Garamond, Lucida, "Times New Roman", Times, serif;
+}
+#footer {
+  text-align:right;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family:"Myriad Pro", "Gill Sans", "Lucida Sans", Verdana, Geneva, sans-serif;
+  margin:6pt 0;
+  page-break-after:avoid;
+  clear:both;
+}
+h1 + p, h2 + p, h3 + p, #mainContent p:first-child {
+  text-indent:0;
+}
+/* Main text */
+p, table {
+  font-size:12pt;
+}
+p {
+  text-align:justify;
+  text-indent:2pc;
+  line-height:1.2;
+  margin:0 0 3pt 0;
+}
+a[href^="http://"]:after {
+  content: " (" attr(href) ") ";
+}
+a:link, a:visited {
+  color:#00C;
+}
+#tr_quote {
+  margin:2pc 2.5pc 2pc auto;
+  width:40%;
+}
+blockquote p {
+  font-style:italic;
+  text-indent:0;
+}
+table {
+  margin:0 auto;
+  page-break-inside:avoid;
+}
+caption {
+  font-size:14pt;
+  font-weight:bold;
+  text-transform:capitalize;
+}
+th {
+  font-weight:normal;
+  text-align:right;
+}
+/* Image alignment */
+.floatleft {
+  float:left;
+  margin:3pt 8pt 3pt 0;
+}
+.floatright {
+  float:right;
+  margin:3pt 0 3pt 8pt;
+}
+.imgcentered {
+  margin:3pt auto;
+  display:block;
+}
+.floatleft, .floatright, .imgcentered {
+  font-weight:bold;
+  text-align:center;
+}
+.floatleft img, .floatright img {
+  display: block;
+  page-break-inside:avoid;
+}
+/* Horizontal navigation bar */
+#nav {
+  display: none;
+}
+/* Sidebar styles */
+#sidebar {
+  border-bottom:2pt solid;
+  margin-bottom:0.25in;
+}

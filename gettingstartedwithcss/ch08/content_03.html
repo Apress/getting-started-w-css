@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Content generated from an attribute</title>
+<style type="text/css">
+body {
+  color:#000;
+  background-color:#FFF;
+  font-family:Arial, Helvetica, sans-serif;
+}
+#wrapper {
+  width:650px;
+  margin:0 auto;
+}
+p:before {
+  content:attr(title);
+  display:block;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <p>Ut labore et dolore magna aliqua. Eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation sed do eiusmod tempor incididunt. Excepteur sint occaecat qui officia deserunt sunt in culpa.</p>
+  <p title="Second paragraph">Consectetur adipisicing elit, in reprehenderit in voluptate cupidatat non proident. Mollit anim id est laborum. Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ullamco laboris nisi qui officia deserunt. Excepteur sint occaecat.</p>
+</div>
+</body>
+</html>

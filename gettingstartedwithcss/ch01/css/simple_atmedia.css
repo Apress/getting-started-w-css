@@ -1,0 +1,20 @@
+body {
+  color: #000;
+  background-color: #FFF;
+}
+ @media screen {
+body { font-family: Arial, Helvetica, sans-serif; }
+h1 { color: #900; }
+p { margin-left: 40px; }
+a:link {
+  color: #060;
+  font-weight: bold;
+}
+a:visited { color: #096; }
+a:hover, a:active { color: #060; }
+}
+ @media print {
+body { font-family: Georgia, "Times New Roman", Times, serif; }
+p { margin-left: 0; }
+a { color: #000; }
+}

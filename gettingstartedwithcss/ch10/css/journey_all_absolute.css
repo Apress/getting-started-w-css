@@ -1,0 +1,228 @@
+/* Page infrastructure */
+body {
+  background-color:#EFECCA;
+  color:#000;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+}
+#wrapper {
+  width:940px;
+  margin:0 auto;
+  background-color:#FFF;
+  background-image:url(../../images/grand_canyon.jpg);
+  background-repeat:no-repeat;
+  background-position:bottom;
+  border-left:2px solid #D8D0AC;
+  border-right:2px solid #D8D0AC;
+}
+#header {
+  height:176px;
+  background-image:url(../../images/journey_header.jpg);
+  background-repeat:no-repeat;
+  position:absolute;
+  width:940px;
+  top:0;
+}
+#sidebar {
+  width:219px;
+  float:left;
+  padding-top:215px;
+}
+#mainContent {
+  border-left:#D8D0AC solid 1px;
+  margin:0 0 0 220px;
+  padding-top:215px;
+}
+#footer {
+  margin:110px 10px 0 auto;
+  text-align:right;
+  text-indent:0;
+}
+.reversed {
+  color:#FFF0A5;
+  background-color:#333;
+  padding:3px 5px;
+  display:inline-block;
+  margin-bottom:10px;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color:#468966;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  margin:10px;
+}
+h1 {
+  margin: 0 0 0 -9000px;
+}
+h1 + p, h2 + p, h3 + p, #mainContent p:first-child {
+  text-indent:0;
+}
+#mainContent p:first-child {
+  padding-top: 10px;
+}
+/* Main text */
+p, table {
+  font-size:14px;
+}
+p {
+  text-align:justify;
+  text-indent:30px;
+  line-height:1.4;
+  margin:0 10px 0.4em 45px;
+}
+a {
+  font-weight:bold;
+  text-decoration:none;
+}
+a:link {
+  color:#B64926;
+}
+a:visited {
+  color:#FFB03B;
+}
+a:hover, a:active {
+  color:#8E2800;
+  text-decoration:underline overline;
+}
+#tr_quote {
+  margin:37px auto 70px 363px;
+  width:275px;
+  background-color:#FFFEF1;
+  background-image:url(../../images/flower2.png);
+  background-repeat:no-repeat;
+  background-position:97% 95%;
+  border:solid 3px;
+  border-top-color:#CAC7B0;
+  border-right-color:#606249;
+  border-bottom-color:#606249;
+  border-left-color:#CAC7B0;
+  padding:10px;
+}
+blockquote p {
+  font-style:italic;
+  text-indent:0;
+  white-space:pre-line;
+  margin-left:0;
+  margin-right:0;
+}
+table {
+  margin:0 auto;
+}
+caption {
+  font-size:18px;
+  color:#468966;
+  font-weight:bold;
+  text-transform:capitalize;
+}
+th {
+  font-weight:normal;
+  text-align:right;
+}
+/* Image alignment */
+.floatleft {
+  float:left;
+  margin:3px 8px 3px 0;
+}
+.floatright {
+  float:right;
+  margin:3px 0 3px 8px;
+}
+.imgcentered {
+  margin:3px auto;
+  display:block;
+}
+.floatleft, .floatright, .imgcentered {
+  font-weight:bold;
+  text-align:center;
+  padding: 2px;
+  border:#66A986 double 4px;
+}
+.floatleft img, .floatright img {
+  display: block;
+}
+/* Sidebar styles */
+#sidebar h2, #sidebar h3 {
+  color: #AA8346;
+  font-family:Verdana, Geneva, sans-serif;
+  padding-bottom: 2px;
+  border-bottom: 2px solid;
+}
+#sidebar h2 {
+  font-size: 20px;
+}
+#sidebar h3 {
+  font-size: 16px;
+  background-image: url(../../images/flower2.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 20px 0 4px 40px;
+}
+#sidebar p {
+  margin: 0 10px 0.75em 25px;
+  text-indent: 0;
+  text-align: left;
+}
+#sidebar a:link {
+  color: #466A89;
+}
+#sidebar a:visited {
+  color: #82B0D5;
+}
+#sidebar a:hover, #sidebar a:active {
+  color: #FFF;
+  background-color: #466A89;
+  text-decoration: none;
+}
+/* Horizontal navigation bar */
+#nav {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  height:2.5em;
+  position:absolute;
+  top:176px;
+}
+#nav li {
+  margin:0;
+  width:165px;
+  float:left;
+}
+#home {
+  width:115px !important;
+}
+#nav a {
+  display:block;
+  padding:0.5em 10px 0.5em 20px;
+  border-top:#C9B089 2px solid;
+  border-left:#C9B089 2px solid;
+  border-right:#5B4625 2px solid;
+  border-bottom:#5B4625 2px solid;
+}
+#nav a:link, #nav a:visited {
+  color:#FFF;
+  background-color:#AA8346;
+}
+#nav a:hover, #nav a:active {
+  background-color:#CDB187;
+  border-top:#5B4625 2px solid;
+  border-left:#5B4625 2px solid;
+  border-right:#C9B089 2px solid;
+  border-bottom:#C9B089 2px solid;
+  text-decoration:none;
+}
+/* Search form */
+#search {
+  position:absolute;
+  top:10px;
+  right:50px;
+}
+#find {
+  background-color:#AA8346;
+  color:#FFF;
+  font-weight:bold;
+  border-top:#C9B089 2px solid;
+  border-left:#C9B089 2px solid;
+  border-right:#5B4625 2px solid;
+  border-bottom:#5B4625 2px solid;
+}

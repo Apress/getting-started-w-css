@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Display: inline and inline-block</title>
+<style type="text/css">
+body {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  color:#000;
+  background-color:#FFF;
+}
+div {
+  width: 650px;
+  margin:0 auto;
+}
+span {
+  font-weight:bold;
+  background-color:#6CF;
+  padding:12px;
+  border: #000 solid 2px;
+  margin:20px;
+  width:100px;
+  vertical-align:super;
+}
+#block {
+  display:inline-block;
+}
+</style>
+</head>
+
+<body>
+<div>
+  <h1>Inline and inline-block</h1>
+  <p>Ullamco laboris nisi ut labore et dolore magna aliqua. <span>This section of text is  an ordinary inline &lt;span&gt;.</span> Sed do eiusmod tempor incididunt ut aliquip ex ea commodo consequat. Quis nostrud exercitation duis aute irure dolor cupidatat non proident. Ullamco laboris nisi eu fugiat nulla pariatur.</p>
+  <p>Ut aliquip ex ea commodo consequat. Excepteur sint occaecat velit esse cillum dolore ut labore et dolore magna aliqua. <span id="block">This &lt;span&gt; is treated as an inline block.</span> Lorem ipsum dolor sit amet, duis aute irure dolor ut aliquip ex ea commodo consequat.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vertical alignment in table cells</title>
+<style type="text/css">
+body {
+  color:#000;
+  background-color:#FFF;
+  font-family:Tahoma, Geneva, sans-serif;
+}
+table {
+  width:500px;
+  margin:20px auto;
+  border-collapse:collapse;
+  border:#000 solid 5px;
+}
+td {
+  padding:5px;
+  border:1px solid #000;
+}
+.top {
+  vertical-align:top;
+}
+.bottom {
+  vertical-align:bottom;
+}
+.baseline {
+  vertical-align:baseline;
+}
+.bigger {
+  font-size:36px;
+}
+</style>
+</head>
+
+<body>
+<table>
+  <tr>
+    <td class="top">Top</td>
+    <td>Middle</td>
+    <td class="bottom">Bottom</td>
+    <td class="baseline"><strong>Baseline</strong>: Eu fugiat nulla pariatur. Ut labore et dolore magna aliqua.</td>
+    <td class="baseline bigger">Baseline is set by the tallest text that uses baseline</td>
+  </tr>
+</table>
+</body>
+</html>

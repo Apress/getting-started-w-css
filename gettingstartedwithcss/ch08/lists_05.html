@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>List-style-position</title>
+<style type="text/css">
+body {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  color:#000;
+  background-color:#FFF;
+}
+div {
+  width:450px;
+  float:left;
+  margin-left:25px;
+}
+h2 {
+  font-size:16px;
+  text-align:center;
+}
+.inside {
+  list-style-position:inside;
+}
+</style>
+</head>
+
+<body>
+<div>
+  <h2>outside (default)</h2>
+  <ul>
+    <li>Velit esse cillum dolore lorem ipsum dolor sit amet, ut aliquip ex ea commodo consequat. Ut labore et dolore magna aliqua. In reprehenderit in voluptate eu fugiat nulla pariatur.</li>
+    <li>Cupidatat non proident, ut enim ad minim veniam, ut aliquip ex ea commodo consequat. Ut labore et dolore magna aliqua. Ullamco laboris nisi duis aute irure dolor mollit anim id est laborum.</li>
+  </ul>
+</div>
+<div>
+  <h2>outside (default)</h2>
+  <ol>
+    <li>Velit esse cillum dolore lorem ipsum dolor sit amet, ut aliquip ex ea commodo consequat. Ut labore et dolore magna aliqua. In reprehenderit in voluptate eu fugiat nulla pariatur.</li>
+    <li>Cupidatat non proident, ut enim ad minim veniam, ut aliquip ex ea commodo consequat. Ut labore et dolore magna aliqua. Ullamco laboris nisi duis aute irure dolor mollit anim id est laborum.</li>
+  </ol>
+</div>
+<div>
+  <h2>inside</h2>
+  <ul class="inside">
+    <li>Velit esse cillum dolore lorem ipsum dolor sit amet, ut aliquip ex ea commodo consequat. Ut labore et dolore magna aliqua. In reprehenderit in voluptate eu fugiat nulla pariatur.</li>
+    <li>Cupidatat non proident, ut enim ad minim veniam, ut aliquip ex ea commodo consequat. Ut labore et dolore magna aliqua. Ullamco laboris nisi duis aute irure dolor mollit anim id est laborum.</li>
+  </ul>
+</div>
+<div>
+  <h2>inside</h2>
+  <ol class="inside">
+    <li>Velit esse cillum dolore lorem ipsum dolor sit amet, ut aliquip ex ea commodo consequat. Ut labore et dolore magna aliqua. In reprehenderit in voluptate eu fugiat nulla pariatur.</li>
+    <li>Cupidatat non proident, ut enim ad minim veniam, ut aliquip ex ea commodo consequat. Ut labore et dolore magna aliqua. Ullamco laboris nisi duis aute irure dolor mollit anim id est laborum.</li>
+  </ol>
+</div>
+
+</body>
+</html>

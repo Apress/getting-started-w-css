@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form styled with outlines</title>
+<style type="text/css">
+body {
+  background-color:#FFF;
+  color:#000;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+form {
+  width:500px;
+  margin:0 50px;
+}
+label {
+  font-weight:bold;
+  display:block;
+}
+.radioHead {
+  font-weight:bold;
+  margin-bottom:0.25em;
+}
+.radioLabel {
+  font-weight:normal;
+  display:inline;
+  padding-left:20px;
+}
+input:focus, textarea:focus, select:focus {
+  outline:#F00 double 4px;
+}
+</style>
+<script type="text/javascript">
+window.onload = function() {document.getElementById('name').focus()};
+</script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <p>
+    <label for="name">Name:</label>
+    <input name="name" type="text" id="name" tabindex="10" />
+  </p>
+  <p>
+    <label for="email">Email:</label>
+    <input name="email" type="text" id="email" tabindex="20" />
+  </p>
+  <p>
+    <label for="comments">Comments:</label>
+    <textarea name="comments" cols="45" rows="5" id="comments" tabindex="30"></textarea>
+  </p>
+  <p>
+    <label for="howhear">How did you hear about us?</label>
+    <select name="howhear" id="howhear" tabindex="40">
+      <option value="0" selected="selected">-- Please select one --</option>
+      <option value="friend">A friend told me</option>
+      <option value="ad">Newspaper/magazine advert</option>
+      <option value="net">Internet</option>
+      <option value="existing_cust">I'm an existing customer</option>
+    </select>
+  </p>
+  <p class="radioHead">Would you like to subscribe to our newsletter?</p>
+<label class="radioLabel">
+    <input name="subscribe" type="radio" id="subscribe_0" tabindex="50" value="y" />
+    Yes, please</label>
+  <br />
+  <label class="radioLabel">
+    <input name="subscribe" type="radio" id="subscribe_1" tabindex="60" value="n" checked="checked" />
+    No, thank you</label>
+  
+  <p><input name="send" type="submit" id="send" tabindex="100" value="Send" /></p>
+</form>
+</body>
+</html>

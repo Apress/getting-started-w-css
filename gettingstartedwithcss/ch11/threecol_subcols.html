@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Three columns fixed with sub-columns</title>
+<style type="text/css">
+body {
+  background-color:#EAE5CE;
+  color:#000;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin:0;
+}
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color:#FFF;
+  background-image:url(../images/sidebar_both.jpg);
+  background-position:center;
+  background-repeat:repeat-y;
+  border-left:#252017 solid 1px;
+  border-right:#252017 solid 1px;
+}
+#header {
+  background-color: #74685A;
+}
+#header h1 {
+  margin:0;
+  padding:10px 20px;
+  color:#FFF;
+  font-family:Verdana, Geneva, sans-serif;
+}
+#sidebar1, #sidebar2 {
+  width:200px;
+  padding:10px;
+}
+#inner {
+  width:740px;
+  float:left;
+}
+#sidebar1 {
+  float:left;
+}
+#mainContent {
+  width:480px;
+  padding:10px 20px;
+  float:right;
+}
+#sidebar2 {
+  float:right;
+}
+#subcol_wrapper {
+  background-color:#EAE5CE;
+  overflow:auto;
+}
+#subcol1 {
+  width:220px;
+  padding:0 10px;
+  float:left;
+}
+#subcol2 {
+  width:220px;
+  padding:0 10px;
+  float:right;
+}
+#subcol_wrapper h3 {
+  border-bottom:3px solid;
+  margin:0 10px;
+}
+#footer {
+  background-color:#252017;
+  color:#DB9924;
+  padding:10px;
+  clear:both;
+}
+h2, h3 {
+  margin-top:0;
+}
+</style>
+<!--[if lte IE 6]>
+<style type="text/css">
+#subcol_wrapper {
+  zoom:1;
+}
+</style>
+<![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="header">
+    <h1>Site Heading</h1>
+  </div>
+  <div id="inner">
+    <div id="mainContent">
+      <h2>Main Heading</h2>
+      <p>Both sidebars come after the main content. The main content is floated right inside the inner wrapper, and the inner wrapper is floated left.</p>
+      <div id="subcol_wrapper">
+        <h3>Points to note</h3>
+        <div id="subcol1">
+          <p>These sub-columns are floated left and right within a &lt;div&gt; that has its overflow property set to auto.</p>
+        </div>
+        <div id="subcol2">
+          <p>Using the overflow property keeps the background even behind the two columns, even though they are of different heights. It also moves the subsequent content below.</p>
+        </div>
+      </div>
+      <p>Velit esse cillum dolore excepteur sint occaecat sunt in culpa. Eu fugiat nulla pariatur. Ullamco laboris nisi qui officia deserunt. Duis aute irure dolor ut labore et dolore magna aliqua.</p>
+      <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt quis nostrud exercitation excepteur sint occaecat. Velit esse cillum dolore qui officia deserunt ut enim ad minim veniam.</p>
+    </div>
+    <div id="sidebar1">
+      <h3>Left sidebar</h3>
+      <p>This side bar is floated left inside the inner wrapper.</p>
+    </div>
+  </div>
+  <div id="sidebar2">
+    <h3>Right sidebar</h3>
+    <p>This sidebar is floated right.</p>
+  </div>
+  <div style="clear:both"></div>
+  <div id="footer">Footer content</div>
+</div>
+</body>
+</html>

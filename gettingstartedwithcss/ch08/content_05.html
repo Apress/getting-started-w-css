@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Content generation: numbered sequences</title>
+<style type="text/css">
+body {
+  color:#000;
+  background-color:#FFF;
+  font-family:Arial, Helvetica, sans-serif;
+  counter-reset: chapter;
+}
+#wrapper {
+  width:725px;
+  margin:0 auto;
+}
+h2:before {
+  counter-increment:chapter;
+  content: 'Chapter ' counter(chapter) ': ';
+}
+h2 {
+  margin-left:25px;
+  counter-reset: subhead;
+}
+h3:before {
+  counter-increment: subhead;
+  content: counter(chapter) '.' counter(subhead) ' ';
+}
+h3 {
+  margin-left:50px;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <h1>Getting StartED with CSS</h1>
+  <h2>What is CSS and Why Should I Learn It?</h2>
+  <h3>Because David says so</h3>
+  <h3>Because it's cool</h3>
+  <h2>How Can I Improve the Look of Text and Links?</h2>
+  <h3>Read the chapter, dude</h3>
+  <h2>How Can I Improve the Layout of my Web Pages?</h2>
+</div>
+</body>
+</html>

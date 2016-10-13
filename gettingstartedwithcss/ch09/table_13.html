@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Table using border-collapse on columns and rows</title>
+<style type="text/css">
+body {
+  background-color:#FFF;
+  color:#000;
+  font-family:Tahoma, Geneva, sans-serif;
+}
+table {
+  margin:30px auto 0 auto;
+  border:#000 solid 5px;
+  border-collapse:collapse;
+}
+caption {
+  caption-side:bottom;
+  font-weight:bold;
+  padding:10px 0;
+}
+#table1 col, #table1 colgroup, #table2 tr, #table3 tbody {
+  border:#F00 solid 1px;
+}
+</style>
+</head>
+
+<body>
+<table width="300" id="table1">
+  <caption>
+  1. Border on &lt;colgroup&gt; and &lt;col&gt;
+  </caption>
+  <colgroup span="1" />
+  
+  <colgroup>
+  <col />
+  <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <td>One</td>
+      <td>Two</td>
+      <td>Three</td>
+    </tr>
+    <tr>
+      <td>Four</td>
+      <td>Five</td>
+      <td>Six</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Seven</td>
+      <td>Eight</td>
+      <td>Nine</td>
+    </tr>
+    <tr>
+      <td>Ten</td>
+      <td>Eleven</td>
+      <td>Twelve</td>
+    </tr>
+  </tbody>
+</table>
+<table width="300" id="table2">
+  <caption>
+  2. Border on &lt;tr&gt;
+  </caption>
+  <colgroup span="1" />
+  </colgroup>
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <td>One</td>
+      <td>Two</td>
+      <td>Three</td>
+    </tr>
+    <tr>
+      <td>Four</td>
+      <td>Five</td>
+      <td>Six</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Seven</td>
+      <td>Eight</td>
+      <td>Nine</td>
+    </tr>
+    <tr>
+      <td>Ten</td>
+      <td>Eleven</td>
+      <td>Twelve</td>
+    </tr>
+  </tbody>
+</table>
+<table width="300" id="table3">
+  <caption>
+  3. Border on &lt;tbody&gt;
+  </caption>
+  <colgroup span="1" />
+  </colgroup>
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <td>One</td>
+      <td>Two</td>
+      <td>Three</td>
+    </tr>
+    <tr>
+      <td>Four</td>
+      <td>Five</td>
+      <td>Six</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Seven</td>
+      <td>Eight</td>
+      <td>Nine</td>
+    </tr>
+    <tr>
+      <td>Ten</td>
+      <td>Eleven</td>
+      <td>Twelve</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

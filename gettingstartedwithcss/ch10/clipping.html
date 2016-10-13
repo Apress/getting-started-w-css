@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Clipping</title>
+<style type="text/css">
+body {
+  background-color:#FFF;
+  color:#000;
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+#wrapper {
+  width:550px;
+  margin:0 auto;
+  position:relative;
+  padding-left:110px;
+}
+#clipped_image {
+  position:absolute;
+  clip:rect(146px, 140px, 336px, 45px);
+  top:-146px;
+  left:-45px;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="clipped_image"><img src="../images/lasvegas.jpg" width="600" height="374" alt="Las Vegas" /></div>
+  <h1>Clipped image</h1>
+  <p>The image on the left is clipped from a much larger image, and displayed using absolute positioning. The clipping offsets are calculated in a completely different way from anything else in CSS. It can produce interesting effects when combined with JavaScript animation, but is probably one of the least used CSS properties.</p>
+</div>
+</body>
+</html>

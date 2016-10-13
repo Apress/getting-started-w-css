@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nested lists</title>
+<style type="text/css">
+body {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  color:#000;
+  background-color:#FFF;
+}
+div {
+  width:300px;
+  float:left;
+  margin-left:70px;
+}
+h2 {
+  font-size:20px;
+}
+#styled ol {
+  list-style-type:lower-alpha;
+}
+#styled ol ol {
+  list-style-type:lower-roman;
+}
+</style>
+</head>
+
+<body>
+<div>
+  <h2>Browser defaults</h2>
+  <ol>
+    <li>Item one</li>
+    <li>Item two
+      <ol>
+        <li>Nested one</li>
+        <li>Nested two
+          <ol>
+            <li>Deep nest one</li>
+            <li>Deep nest two</li>
+          </ol>
+        </li>
+        <li>Nested three</li>
+      </ol>
+    </li>
+    <li>Item three</li>
+  </ol>
+  <ul>
+    <li>Item one</li>
+    <li>Item two
+      <ul>
+        <li>Nested one</li>
+        <li>Nested two
+          <ul>
+            <li>Deep nest one</li>
+            <li>Deep nest two</li>
+          </ul>
+        </li>
+        <li>Nested three</li>
+      </ul>
+    </li>
+    <li>Item three</li>
+  </ul>
+</div>
+<div>
+  <h2>Styled ordered list</h2>
+  <ol id="styled">
+    <li>Item one</li>
+    <li>Item two
+      <ol>
+        <li>Nested one</li>
+        <li>Nested two
+          <ol>
+            <li>Deep nest one</li>
+            <li>Deep nest two</li>
+          </ol>
+        </li>
+        <li>Nested three</li>
+      </ol>
+    </li>
+    <li>Item three</li>
+  </ol>
+</div>
+</body>
+</html>

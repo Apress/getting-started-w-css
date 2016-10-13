@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Using visibility: collapse with table columns</title>
+<style type="text/css">
+table {
+  width:600px;
+  margin:0 auto;
+  border:#002F2F 1px solid;
+  font-family:Tahoma, Geneva, sans-serif;
+  caption-side:bottom;
+  border-collapse:collapse;
+  table-layout:fixed;
+}
+caption {
+  font-size:18px;
+  font-weight:bold;
+  font-variant:small-caps;
+  padding:10px;
+}
+td {
+  text-align:right;
+  padding:3px 30px 3px 3px;
+  border-bottom:1px solid #002F2F;
+}
+.labelcol {
+  background-color:#046380;
+}
+.oddcol {
+  background-color:#E6E2AF;
+  width:23%;
+}
+.evencol {
+  background-color:#EFECCA;
+  width:23%;
+  visibility:collapse;
+}
+.headrow th, .headrow:hover th {
+  background-color:#046380;
+  text-align:center;
+  vertical-align:top;
+  font-variant:small-caps;
+}
+th {
+  color:#EFECCA;
+  padding:3px 10px;
+  text-align:right;
+}
+tr:hover {
+  background-color:#FFF;
+}
+tr:hover th {
+  background-color:#008080;
+}
+</style>
+</head>
+
+<body>
+<table>
+  <caption>
+  Average weather in London and South East England
+  </caption>
+  <colgroup>
+    <col class="labelcol" />
+    <col class="oddcol" />
+    <col class="evencol" />
+    <col class="oddcol" />
+    <col class="evencol" />
+  </colgroup>
+  <tr class="headrow">
+    <th>&nbsp;</th>
+    <th>Max Temp °C (F)</th>
+    <th>Min Temp °C (F)</th>
+    <th>Sun (hours)</th>
+    <th>Days of Rain &gt;= 1mm</th>
+  </tr>
+  <tr>
+    <th>Jan</th>
+    <td>7.2 (45.0)</td>
+    <td>1.5 (34.7)</td>
+    <td>54.6</td>
+    <td>12.8</td>
+  </tr>
+  <tr>
+    <th>Feb</th>
+    <td>7.5 (45.5)</td>
+    <td>1.2 (34.2)</td>
+    <td>73.0</td>
+    <td>9.7</td>
+  </tr>
+  <tr>
+    <th>Mar</th>
+    <td>10.1 (50.2)</td>
+    <td>2.8 (37.0)</td>
+    <td>111.0</td>
+    <td>11.0</td>
+  </tr>
+  <tr>
+    <th>Apr</th>
+    <td>12.5 (54.5)</td>
+    <td>3.9 (39.0)</td>
+    <td>159.4</td>
+    <td>9.4</td>
+  </tr>
+  <tr>
+    <th>May</th>
+    <td>16.3 (61.3)</td>
+    <td>6.9 (44.4)</td>
+    <td>201.4</td>
+    <td>9.2</td>
+  </tr>
+  <tr>
+    <th>Jun</th>
+    <td>19.1 (66.4)</td>
+    <td>9.7 (49.5)</td>
+    <td>194.4</td>
+    <td>8.8</td>
+  </tr>
+  <tr>
+    <th>Jul</th>
+    <td>21.7 (71.1)</td>
+    <td>11.9 (53.4)</td>
+    <td>210.4</td>
+    <td>7.2</td>
+  </tr>
+  <tr>
+    <th>Aug</th>
+    <td>21.6 (70.9)</td>
+    <td>11.8 (53.2)</td>
+    <td>205.0</td>
+    <td>7.9</td>
+  </tr>
+  <tr>
+    <th>Sep</th>
+    <td>18.5 (65.3)</td>
+    <td>9.8 (49.6)</td>
+    <td>147.3</td>
+    <td>9.4</td>
+  </tr>
+  <tr>
+    <th>Oct</th>
+    <td>14.5 (58.1)</td>
+    <td>7.0 (44.6)</td>
+    <td>112.5</td>
+    <td>11.0</td>
+  </tr>
+  <tr>
+    <th>Nov</th>
+    <td>10.3 (50.5)</td>
+    <td>3.8 (38.8)</td>
+    <td>72.1</td>
+    <td>11.4</td>
+  </tr>
+  <tr>
+    <th>Dec</th>
+    <td>8.1 (46.6)</td>
+    <td>2.4 (36.3)</td>
+    <td>47.9</td>
+    <td>12.2</td>
+  </tr>
+</table>
+</body>
+</html>

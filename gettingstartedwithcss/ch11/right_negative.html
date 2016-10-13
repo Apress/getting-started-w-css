@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Two columns right sidebar using a negative margin</title>
+<style type="text/css">
+body {
+  background-color:#EAE5CE;
+  color:#000;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin:0;
+}
+#wrapper {
+  width: 760px;
+  margin: 0 auto;
+  background-color:#FFF;
+  background-image:url(../images/sidebar_right.jpg);
+  background-position:right;
+  background-repeat:repeat-y;
+  border-left:#252017 solid 1px;
+  border-right:#252017 solid 1px;
+}
+#header {
+  background-color: #74685A;
+}
+#header h1 {
+  margin:0;
+  padding:10px;
+  color:#FFF;
+  font-family:Verdana, Geneva, sans-serif;
+}
+#sidebar {
+  width:220px;
+  padding:10px;
+  float:left;
+  margin-left:-240px;
+}
+#mainContent {
+  padding:10px 20px;
+  float:left;
+  width:480px;
+  margin-right:240px;
+  display:inline;
+}
+#footer {
+  background-color:#252017;
+  color:#DB9924;
+  padding:10px;
+}
+h2, h3 {
+  margin-top:0;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="header">
+    <h1>Site Heading</h1>
+  </div>
+  <div id="mainContent">
+    <h2>Main Heading</h2>
+    <p>Sed do eiusmod tempor incididunt lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor cupidatat non proident, sed do eiusmod tempor incididunt.</p>
+    <p>Ut enim ad minim veniam, lorem ipsum dolor sit amet, ut aliquip ex ea commodo consequat. Velit esse cillum dolore excepteur sint occaecat sunt in culpa. Eu fugiat nulla pariatur.</p>
+    <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt quis nostrud exercitation excepteur sint occaecat. Velit esse cillum dolore qui officia deserunt ut enim ad minim veniam. </p>
+  </div>
+  <div id="sidebar">
+    <h3>Sidebar heading</h3>
+    <p>The main content leaves a wide margin for the sidebar. Both elementsare floated left, and the sidebar is given a negative margin equal to the margin created for it alongside the main content.</p>
+  </div>
+  <div style="clear:both"></div>
+  <div id="footer">Footer content</div>
+</div>
+</body>
+</html>

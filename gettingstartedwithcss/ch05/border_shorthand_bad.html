@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Using border shorthand the wrong way</title>
+<style type="text/css">
+body {
+  background-color:#CCC;
+}
+div {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  font-size:180%;
+  color: #FFF;
+  background: #066;
+  height: 1.2em;
+  width: 200px;
+  text-align:center;
+  padding:.5em 0;
+  float:left;
+  margin:25px 0 0 100px;
+}
+#embossed {
+  border-top:#5C9D9D solid 6px;
+  border-right:#003636 solid 6px;
+  border-bottom:#003636 solid 6px;
+  border-left:#5C9D9D solid 6px;
+}
+#indented {
+  border-color:#003636 #5C9D9D #5C9D9D #003636;
+  /* Using the border shorthand after border-color overrides the 
+  colors, and uses the text color instead. */
+  border:solid 6px;
+}
+</style>
+</head>
+
+<body>
+<div id="embossed">Embossed</div>
+<div id="indented">Indented</div>
+</body>
+</html>

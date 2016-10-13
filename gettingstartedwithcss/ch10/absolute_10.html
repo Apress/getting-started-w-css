@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Problems with absolute positioning</title>
+<style type="text/css">
+body {
+  background-color:#FFF;
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0;
+}
+#wrapper {
+  position:relative;
+  width:650px;
+  margin:0 auto;
+}
+#special {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 200px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #8E2800;
+  border: outset 5px #4C1500;
+}
+#special h3 {
+  text-transform:uppercase;
+  text-align:center;
+}
+#special p {
+  padding: 0 20px;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <p>Sed do eiusmod tempor incididunt in reprehenderit in voluptate velit esse cillum dolore. Lorem ipsum dolor sit amet, excepteur sint occaecat quis nostrud exercitation. Sunt in culpa consectetur adipisicing elit, ullamco laboris nisi.</p>
+  <p>Ut enim ad minim veniam, lorem ipsum dolor sit amet, excepteur sint occaecat. Ut labore et dolore magna aliqua. Duis aute irure dolor ut aliquip ex ea commodo consequat. Quis nostrud exercitation sunt in culpa.</p>
+  <p>Lorem ipsum dolor sit amet, eu fugiat nulla pariatur. Ut labore et dolore magna aliqua. Cupidatat non proident, ut enim ad minim veniam, excepteur sint occaecat.</p>
+  <div id="special">
+    <h3>Special offer!</h3>
+    <p>20% off until the end of the month.</p>
+  </div>
+</div>
+</body>
+</html>

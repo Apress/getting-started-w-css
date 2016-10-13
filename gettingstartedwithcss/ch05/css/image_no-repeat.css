@@ -1,0 +1,99 @@
+/* Page infrastructure */
+body {
+  background-color:#EFECCA;
+  color:#000;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+  background-image:url(../../images/flower1.png);
+  background-repeat:no-repeat;
+}
+#wrapper {
+  width:720px;
+  margin:0 auto;
+  background-color:#FFF;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color:#468966;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  margin:10px;
+  clear:both;
+}
+h1 {
+  font-size:220%;
+  font-variant:small-caps;
+  text-align:center;
+  word-spacing:0.2em;
+  letter-spacing:0.05em;
+  margin-top:0;
+}
+h1 + p, h2 + p, h3 + p {
+  text-indent:0;
+}
+/* Main text */
+p, table {
+  font-size:14px;
+}
+p {
+  text-align:justify;
+  text-indent:30px;
+  line-height:1.4;
+  margin:0 10px 0.4em 45px;
+}
+a {
+  font-weight:bold;
+  text-decoration:none;
+}
+a:link {
+  color:#B64926;
+}
+a:visited {
+  color:#FFB03B;
+}
+a:hover, a:active {
+  color:#8E2800;
+  text-decoration:underline overline;
+}
+#tr_quote {
+  margin:50px 71px 0 374px;
+  width:275px;
+  background-color:#FFFEF1;
+}
+blockquote p {
+  font-style:italic;
+  text-indent:0;
+  white-space:pre-line;
+  margin-left:0;
+  margin-right:0;
+}
+table {
+  margin:0 auto;
+}
+caption {
+  font-size:18px;
+  color:#468966;
+  font-weight:bold;
+  text-transform:capitalize;
+}
+th {
+  font-weight:normal;
+  text-align:right;
+}
+/* Image alignment */
+.floatleft {
+  float:left;
+  margin:3px 8px 3px 0;
+}
+.floatright {
+  float:right;
+  margin:3px 0 3px 8px;
+}
+.imgcentered {
+  margin:3px auto;
+  display:block;
+}
+.floatleft, .floatright, .imgcentered {
+  font-weight:bold;
+  text-align:center;
+}

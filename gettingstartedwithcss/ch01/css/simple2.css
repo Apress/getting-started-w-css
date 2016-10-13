@@ -1,0 +1,21 @@
+body {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #034B61;
+	background-color: #EFECCA;
+}
+h1 {
+	color: #900;
+}
+p {
+	margin-left: 40px;
+}
+a:link {
+	color: #060;
+	font-weight: bold;
+}
+a:visited {
+	color: #096;
+}
+a:hover, a:active {
+	color: #060;
+}

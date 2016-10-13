@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Overlapping absolutely positioned elements</title>
+<style type="text/css">
+#images {
+  position:relative;
+  width:350px;
+  margin:40px auto;
+}
+#images img {
+  position:absolute;
+}
+#flower1 {
+  left:-30px;
+  top:-30px;
+}
+#angel {
+  top: 0;
+  left: 0;
+}
+#flower2 {
+  right:-30px;
+  top:220px;
+}
+</style>
+</head>
+
+<body>
+<div id="images">
+<img src="../images/flower1.png" alt="Flower" width="80" height="61" id="flower1" />
+<img src="../images/angels_window.jpg" alt="Angel's Window" width="350" height="249" id="angel" />
+<img src="../images/flower1.png" alt="Flower" width="80" height="61" id="flower2" />
+</div>
+</body>
+</html>

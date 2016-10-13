@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Relative positioning</title>
+<style type="text/css">
+body {
+  background-color:#FFF;
+  color:#000;
+  font-family:Tahoma, Geneva, sans-serif;
+}
+#wrapper {
+  width:650px;
+  margin:0 auto;
+}
+#rel {
+  border:1px #000 solid;
+  background-color:#CCC;
+  position:relative;
+  left:50px;
+  top:50px;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt quis nostrud exercitation. Lorem ipsum dolor sit amet, ut enim ad minim veniam, ut aliquip ex ea commodo consequat. Consectetur adipisicing elit, velit esse cillum dolore ullamco laboris nisi.</p>
+  <p id="rel">This paragraph is relatively positioned with top and left offsets set to 50px. As a result, it is shifted 50px down and to the right, and a space left in its original position. The following paragraph acts as though this one hasn't moved.</p>
+  <p>Quis nostrud exercitation. Quis nostrud exercitation ullamco laboris nisi lorem ipsum dolor sit amet. Excepteur sint occaecat ut enim ad minim veniam, mollit anim id est laborum. Ut aliquip ex ea commodo consequat. Sunt in culpa qui officia deserunt cupidatat non proident.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nested absolutely positioned elements</title>
+<style type="text/css">
+body {
+  color:#000;
+  background-color:#FFF;
+  font-family:Tahoma, Geneva, sans-serif;
+}
+#absolute1, #nested {
+  position: absolute;
+  width: 300px;
+  padding: 20px;
+  font-weight: bold;
+  border:#000 solid 10px;
+}
+#absolute1 {
+  right: 75px;
+  top: 100px;
+  height: 150px;
+  background-color: orange;
+}
+#nested {
+  top: -100px;
+  left: -450px;
+  height: 85px;
+  background-color: teal;
+}
+p {
+  margin-top:0;
+}
+</style>
+</head>
+
+<body>
+<div id="absolute1">
+  <p>This &lt;div&gt; is absolutely positioned. Its top right corner will always be 100px from the top  and 75px from the left side of the page.</p>
+  <p>The anchor point is calculated from the outer edge of any border.</p>
+  <div id="nested">
+    <p>I'm nested inside the other &lt;div&gt; with negative offsets:</p>
+    <ul>
+      <li>top: -100px;</li>
+      <li>left: -450px;</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

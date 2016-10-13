@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>How tables are built in stages</title>
+<style type="text/css">
+body {
+  background-color:#FFF;
+  font-family:Tahoma, Geneva, sans-serif;
+}
+#wrapper {
+  width: 680px;
+  margin-right: auto;
+  margin-left: auto;
+}
+table {
+  background-color:red;
+  margin:20px;
+  float:left;
+  border-collapse:collapse;
+  color:#FFF;
+}
+caption {
+  caption-side:bottom;
+  padding:10px;
+  font-weight:bold;
+  color:#000;
+}
+.orangecols {
+  background-color:orange;
+}
+.bluecol {
+  background-color:blue;
+}
+.greensection {
+  background-color:green;
+}
+.maroonrow {
+  background-color:maroon;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<table width="300">
+  <colgroup span="1" />
+  
+  <colgroup>
+  <col />
+  <col />
+  </colgroup>
+  <caption>
+  1. Table with red background
+  </caption>
+  <tbody>
+    <tr>
+      <td>One</td>
+      <td>Two</td>
+      <td>Three</td>
+    </tr>
+    <tr>
+      <td>Four</td>
+      <td>Five</td>
+      <td>Six</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Seven</td>
+      <td>Eight</td>
+      <td>Nine</td>
+    </tr>
+    <tr>
+      <td>Ten</td>
+      <td>Eleven</td>
+      <td>Twelve</td>
+    </tr>
+  </tbody>
+</table>
+  <table width="300">
+    <caption>
+    2. Orange column group added
+    </caption>
+    <colgroup span="1" />
+    
+    <colgroup class="orangecols">
+    <col />
+    <col />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>One</td>
+        <td>Two</td>
+        <td>Three</td>
+      </tr>
+      <tr>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Six</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Seven</td>
+        <td>Eight</td>
+        <td>Nine</td>
+      </tr>
+      <tr>
+        <td>Ten</td>
+        <td>Eleven</td>
+        <td>Twelve</td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="300">
+    <caption>
+    3. Blue column added
+    </caption>
+    <colgroup span="1" />
+    
+    <colgroup class="orangecols">
+    <col class="bluecol" />
+    <col />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>One</td>
+        <td>Two</td>
+        <td>Three</td>
+      </tr>
+      <tr>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Six</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Seven</td>
+        <td>Eight</td>
+        <td>Nine</td>
+      </tr>
+      <tr>
+        <td>Ten</td>
+        <td>Eleven</td>
+        <td>Twelve</td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="300">
+    <caption>
+    4. Green row group added
+    </caption>
+    <colgroup span="1" />
+    
+    <colgroup class="orangecols">
+    <col class="bluecol" />
+    <col />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>One</td>
+        <td>Two</td>
+        <td>Three</td>
+      </tr>
+      <tr>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Six</td>
+      </tr>
+    </tbody>
+    <tbody class="greensection">
+      <tr>
+        <td>Seven</td>
+        <td>Eight</td>
+        <td>Nine</td>
+      </tr>
+      <tr>
+        <td>Ten</td>
+        <td>Eleven</td>
+        <td>Twelve</td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="300">
+    <caption>
+    5. Maroon row added
+    </caption>
+    <colgroup span="1" />
+    
+    <colgroup class="orangecols">
+    <col class="bluecol" />
+    <col />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>One</td>
+        <td>Two</td>
+        <td>Three</td>
+      </tr>
+      <tr>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Six</td>
+      </tr>
+    </tbody>
+    <tbody class="greensection">
+      <tr class="maroonrow">
+        <td>Seven</td>
+        <td>Eight</td>
+        <td>Nine</td>
+      </tr>
+      <tr>
+        <td>Ten</td>
+        <td>Eleven</td>
+        <td>Twelve</td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="300">
+    <caption>
+    6. Blue cells restored
+    </caption>
+    <colgroup span="1" />
+    
+    <colgroup class="orangecols">
+    <col class="bluecol" />
+    <col />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>One</td>
+        <td>Two</td>
+        <td>Three</td>
+      </tr>
+      <tr>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Six</td>
+      </tr>
+    </tbody>
+    <tbody class="greensection">
+      <tr class="maroonrow">
+        <td>Seven</td>
+        <td class="bluecol">Eight</td>
+        <td>Nine</td>
+      </tr>
+      <tr>
+        <td>Ten</td>
+        <td class="bluecol">Eleven</td>
+        <td>Twelve</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

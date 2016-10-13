@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Three column layout using table-related values of the display property</title>
+<style type="text/css">
+body {
+  background-color:#EAE5CE;
+  color:#000;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin:0;
+}
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color:#FFF;
+  border-left:#252017 solid 1px;
+  border-right:#252017 solid 1px;
+}
+#header {
+  background-color: #74685A;
+}
+#header h1 {
+  margin:0;
+  padding:10px 20px;
+  color:#FFF;
+  font-family:Verdana, Geneva, sans-serif;
+}
+#sidebar1, #sidebar2 {
+  width:180px;
+  padding:10px;
+  display:table-cell;
+  background-repeat:repeat-y;
+}
+#sidebar1 {
+  background-image:url(../images/sidebar_left.jpg);
+  background-position:right;
+}
+#sidebar2 {
+  background-image:url(../images/sidebar_right.jpg);
+  background-position:left;
+}
+#mainContent {
+  padding:10px 20px;
+  display:table-cell;
+  width:520px;
+}
+#footer {
+  background-color:#252017;
+  color:#DB9924;
+  padding:10px 20px;
+}
+h2, h3 {
+  margin-top:0;
+}
+#subcol1, #subcol2 {
+  display:table-cell;
+}
+#subcol1 {
+  width:240px;
+  padding:0 10px;
+}
+#subcol2 {
+  width:240px;
+  padding:0 10px;
+}
+#subcol_wrapper {
+  background-color:#EAE5CE;
+  display:table;
+  border-collapse:collapse;
+}
+#subcol_wrapper h3 {
+  display:table-cell;
+  padding:0 10px;
+}
+.headerrow {
+  display:table-header-group;
+  border-bottom:3px solid;  
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="header">
+    <h1>Site Heading</h1>
+  </div>
+  <div id="sidebar1">
+    <h3>Left sidebar</h3>
+  </div>
+  <div id="mainContent">
+    <h2>Main Heading</h2>
+    <p>Each column appears in the underlying HTML markup in the same order as it is displayed, and is styled by giving it a width and setting the display property  to table-cell.</p>
+    <div id="subcol_wrapper">
+      <div class="headerrow">
+        <h3>Points to note</h3>
+      </div>
+      <div id="subcol1">
+        <p>This is a &lt;div&gt; nested inside the center column with its display property set to table.</p>
+      </div>
+      <div id="subcol2">
+        <p>The heading is wrapped in a &lt;div&gt; with its display property set to table-header-group. Although this produces a grid layout, it's arguably just as difficult to construct as a layout that uses floats.</p>
+      </div>
+    </div>
+    <p>Ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt quis nostrud exercitation excepteur sint occaecat. Velit esse cillum dolore qui officia deserunt ut enim ad minim veniam.</p>
+  </div>
+  <div id="sidebar2">
+    <h3>Right sidebar</h3>
+  </div>
+  <div id="footer">Footer content</div>
+</div>
+</body>
+</html>

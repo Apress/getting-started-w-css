@@ -1,0 +1,28 @@
+body {
+  background-color:#FFF;
+  color:#000;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  color:#468966;
+  font-family:Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+  font-size:220%;
+  font-variant:small-caps;
+}
+p, table {
+  font-size:14px;
+}
+caption {
+  font-size:18px;
+  color:#468966;
+  font-weight:bold;
+  text-transform:capitalize;
+}
+th {
+  font-weight:normal;
+}
+blockquote {
+  font-style:italic;
+}

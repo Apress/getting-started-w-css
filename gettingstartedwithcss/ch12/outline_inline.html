@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Inline elements with outline and border</title>
+<style type="text/css">
+body {
+  background-color:#FFF;
+  color:#000;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#wrapper {
+  width:400px;
+  margin:0 auto;
+}
+.outlined {
+  outline:#F00 solid 1px;
+}
+.bordered {
+  border:#F00 solid 1px;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <p>One of the differences between an outline and a border is what happens when you apply them to inline elements. <span class="outlined">This section has an outline applied to it, and the outline should surround the whole element and be unbroken.</span></p>
+  <p><span class="bordered">This section, on the other hand has a border applied to it. See what happens at the end of each line. It is left open and broken.</span> So now you know.</p>
+</div>
+</body>
+</html>
